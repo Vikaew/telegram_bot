@@ -67,5 +67,5 @@ dispatcher = updater.dispatcher
 dispatcher.add_handler(CommandHandler('start', start))
 dispatcher.add_handler(MessageHandler(Filters.entity(MessageEntity.URL), download))
 
-
+updater.start_polling()
 updater.idle()
